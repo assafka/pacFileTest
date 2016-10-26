@@ -1,7 +1,7 @@
 function FindProxyForURL(url, host) 
 {
   if (isInNet(myIpAddress(), "192.168.1.0", "255.255.255.0"))
-    return "PROXY 4.5.6.7:8081; PROXY 4.5.6.22:8081";
+    return "PROXY 192.168.0.126:808;";
   else 
-    return "PROXY 4.5.6.7:8081; PROXY 4.5.6.22:8081";
+    return "PROXY 192.168.0.126:808;";
 }
